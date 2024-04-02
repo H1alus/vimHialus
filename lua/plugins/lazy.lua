@@ -6,6 +6,7 @@ local telescope = require("plugins.telescope")
 local mason = require("plugins.mason")
 local go_nvim = require("plugins.go")
 local lualine = require("plugins.lualine")
+local nvim_tree = require("plugins.nvim_tree")
 local lazy = {}
 
 lazy.config = function()
@@ -26,6 +27,7 @@ lazy.config = function()
 		require("lazy").setup({
 			barbar,
 			cmp,
+			nvim_tree,
 			treesitter,
 			--"ms-jpq/chadtree",
 			mason,

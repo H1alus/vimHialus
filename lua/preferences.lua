@@ -1,3 +1,5 @@
+-- this should only contain general vim mappings 
+-- or confings opts that are not related to a specific plugin
 local preferences = {}
 
 preferences.config = function()
@@ -13,8 +15,8 @@ preferences.config = function()
 	vim.keymap.set('n', '<space>k', '<C-w>k') -- space-k moves to the buffer placed down
 	vim.keymap.set('n', '<space>nv', '<C-w>v') -- space-nv creates a new vertical buffer
 	vim.keymap.set('n', '<space>nh', function() vim.cmd.nohlsearch() end) -- space-nh toggles search highlight
-	-- for now i'll keep this here
-	vim.keymap.set('n', '<space>t', '<cmd>CHADopen<cr>')
+	-- theme setting 
+	-- available themes
 	require('onedark').setup {
  	style = 'warmer'
 	}
