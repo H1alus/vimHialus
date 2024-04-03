@@ -44,15 +44,5 @@ return {
 					additional_vim_regex_highlighting = true,
 			},
 		})
-	-- hot fix for bash 
-		vim.api.nvim_create_autocmd('FileType', {
-			pattern = 'sh',
-			callback = function()
-					vim.lsp.start({
-							name = 'bash-language-server',
-							cmd = { 'bash-language-server', 'start' },
-					})
-			end,
-		})
 	end
 }

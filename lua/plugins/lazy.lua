@@ -29,7 +29,7 @@ lazy.config = function()
 			cmp,
 			nvim_tree,
 			treesitter,
-			--"ms-jpq/chadtree",
+			----"ms-jpq/chadtree",
 			mason,
 			go_nvim,
 			telescope,	
@@ -37,5 +37,7 @@ lazy.config = function()
 			"navarasu/onedark.nvim",
 		})
 	end
+	-- mason and its extensions don't work with lazy auto-setup
+	mason.config()
 end
 return lazy
