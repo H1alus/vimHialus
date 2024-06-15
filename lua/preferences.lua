@@ -3,13 +3,13 @@
 local preferences = {}
 
 preferences.config = function()
-	-- some basic settings
+	-- some basic settingsvivim
 	vim.opt.relativenumber = true -- relative numbers to the current line
 	vim.opt.mouse = a -- for xclip
-	vim.opt.tabstop = 1 -- visualized tab
+	vim.opt.tabstop = 4 -- visualized tab
 	vim.opt.expandtab = false -- make sure we use tabs in our files
-	vim.opt.shiftwidth = 1 --width of the tab shift operand
-	vim.keymap.set('n', '<space>l', '<C-w>l') -- space-l moves to the buffer placed on the right
+	vim.opt.shiftwidth = 4 --width of the tab shift operand
+	vim.keymap.set('n', '<space>l', '<C-w>l') -- space-l moves to the buffer placed on the rightvim
 	vim.keymap.set('n', '<space>h', '<C-w>h') -- space-h moves to the buffer placed on the left
 	vim.keymap.set('n', '<space>j', '<C-w>j') -- space-j moves to the buffer placed up
 	vim.keymap.set('n', '<space>k', '<C-w>k') -- space-k moves to the buffer placed down
@@ -18,7 +18,7 @@ preferences.config = function()
 	-- theme setting 
 	-- available themes
 	require('onedark').setup {
- 	style = 'warmer'
+	style = 'warmer'
 	}
 	require('onedark').load()
 end

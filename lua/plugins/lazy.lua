@@ -32,7 +32,7 @@ lazy.config = function()
 			----"ms-jpq/chadtree",
 			mason,
 			go_nvim,
-			telescope,	
+			telescope,
 			lualine,
 			"navarasu/onedark.nvim",
 		})
