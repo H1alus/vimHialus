@@ -1,7 +1,6 @@
 local lsp = {
 	'lua-language-server',
-	'gopls',
-	'clangd',
+	'rust_hdl',
 	'jedi-language-server'
 }
 
