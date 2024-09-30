@@ -7,6 +7,7 @@ preferences.config = function()
 	vim.opt.relativenumber = true -- relative numbers to the current line
 	vim.opt.mouse = a -- for xclip
 	vim.opt.tabstop = 4 -- visualized tab
+	vim.opt.clipboard:append { 'unnamed', 'unnamedplus' } -- set clipboard to always work alongside the system clipboard
 	vim.opt.expandtab = false -- make sure we use tabs in our files
 	vim.opt.shiftwidth = 4 --width of the tab shift operand
 	vim.keymap.set('n', '<space>l', '<C-w>l') -- space-l moves to the buffer placed on the rightvim

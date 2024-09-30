@@ -1,19 +1,19 @@
-local lsp = {		
-	 'lua-language-server',
-	 'gopls',
-	 'clangd',
-	 'jedi-language-server'
-	}
+local lsp = {
+	'lua-language-server',
+	'gopls',
+	'clangd',
+	'jedi-language-server'
+}
 
 local mason = {
  "neovim/nvim-lspconfig",
  "williamboman/mason.nvim",
  "williamboman/mason-lspconfig.nvim",
  'WhoIsSethDaniel/mason-tool-installer.nvim',
-}
+ }
 -- mason and its extension don't work in lazy fashion
 -- so I'll explicitly call the config method outside lazy scope in the file
-mason.config = function()
+ mason.config = function()
  require("mason").setup()
  require('mason-tool-installer').setup {
 
@@ -46,11 +46,11 @@ mason.config = function()
   debounce_hours = nil, -- at least 5 hours between attempts to install/update
  }
  require("mason-lspconfig").setup()
- 	local lspconfig = require("lspconfig")
-	lspconfig.lua_ls.setup{}
-	lspconfig.gopls.setup{}
-	lspconfig.clangd.setup{}
-	lspconfig.jedi_language_server.setup{}
-
+ local lspconfig = require("lspconfig")
+ lspconfig.lua_ls.setup{}
+ lspconfig.clangd.setup{}
+ lspconfig.jedi_language_server.setup{}
+ lspconfig.vhdl_ls.setup{}
+ lspconfig.pyright.setup{}
 end
 return mason
