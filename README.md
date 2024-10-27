@@ -7,3 +7,4 @@ the following packages are needed:
 - python3-venv
 - python3-virtualenv
 - ripgrep
+- latexmk (only if you use latex with miktex)

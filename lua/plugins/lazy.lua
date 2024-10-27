@@ -7,6 +7,7 @@ local mason = require("plugins.mason")
 --local go_nvim = require("plugins.go")
 local lualine = require("plugins.lualine")
 local nvim_tree = require("plugins.nvim_tree")
+local vimtex = require("plugins.vimtex")
 local lazy = {}
 
 lazy.config = function()
@@ -35,6 +36,7 @@ lazy.config = function()
 			telescope,
 			lualine,
 			"navarasu/onedark.nvim",
+			vimtex,
 		})
 	end
 	-- mason and its extensions don't work with lazy auto-setup
