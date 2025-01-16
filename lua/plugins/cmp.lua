@@ -49,5 +49,8 @@ return {
 				{ name = "cmdline" },
 			}),
 		})
+	   cmp.setup.filetype('tex', {
+    		enabled = false,
+	   })
 	end
 }
