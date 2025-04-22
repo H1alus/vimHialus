@@ -51,6 +51,6 @@ local mason = {
  lspconfig.clangd.setup{}
  lspconfig.jedi_language_server.setup{}
  lspconfig.vhdl_ls.setup{}
- lspconfig.pyright.setup{}
+ -- lspconfig.pyright.setup{}
 end
 return mason

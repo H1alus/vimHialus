@@ -15,8 +15,9 @@ preferences.config = function()
 	vim.keymap.set('n', '<space>h', '<C-w>h') -- space-h moves to the buffer placed on the left
 	vim.keymap.set('n', '<space>j', '<C-w>j') -- space-j moves to the buffer placed up
 	vim.keymap.set('n', '<space>k', '<C-w>k') -- space-k moves to the buffer placed down
-	vim.keymap.set('n', '<space>nv', '<C-w>v') -- space-nv creates a new vertical buffer
+	vim.keymap.set('n', '<space>vb', '<C-w>v') -- space-nv creates a new vertical buffer
 	vim.keymap.set('n', '<space>nh', function() vim.cmd.nohlsearch() end) -- space-nh toggles search highlight
+	vim.keymap.set('n', '<space>nv', ':vnew<cr>')
 	-- theme setting 
 	-- available themes
 	require('onedark').setup {
